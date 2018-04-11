@@ -43,10 +43,10 @@ This is already supported in the M# and Olive frameworks. If you use any other f
 TODO: Copy from https://sanityhub.com/syntax and make brief.
 
 ### Action commands
-| Command example | Description  |
-| ------------- |:-------------:|
-| `Click("Save");` | Performs the click action on a click-able html element such as a button or link or input | 
-| ... | ... | 
+| Command | Description | Example
+| ------------- |:-------------:|:-------:|
+| [Click](commands\Click.md) | Performs the click action on a click-able html element such as a button or link or input | `Click("Save");`
+| ... | ... | ...
 
 ### Assert commands
 ...
