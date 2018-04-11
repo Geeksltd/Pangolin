@@ -1,6 +1,4 @@
 # Pangolin
-The Pangolin UI testing framework.
-
 Pangolin is a browser automated testing framework that enables you to write and run test scripts using simple commands in C#. The automation of Pangolin enables many tests to be executed in a short space of time, allowing faster and more efficient testing while still maintaining reliability and accuracy.
 
 ### The Pangolin Language
