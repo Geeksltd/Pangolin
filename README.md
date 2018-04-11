@@ -43,9 +43,9 @@ This is already supported in the M# and Olive frameworks. If you use any other f
 TODO: Copy from https://sanityhub.com/syntax and make brief.
 
 ### Action commands
-| Command | Description | Example
+| Command |  Example | Description
 | ------------- |:-------------:|:-------:|
-| [Click](commands\Click.md) | Performs the click action on a click-able html element such as a button or link or input | `Click("Save");`
+| [Click](commands\Click.md) | `Click("Save");` | Performs the click action on a click-able html element such as a button or link or input 
 | ... | ... | ...
 
 ### Assert commands
