@@ -44,7 +44,7 @@ This is already supported in the M# and Olive frameworks. If you use any other f
 ### Action commands
 | Command | Description | Example  |
 | ------------- |:-------------:| -----:|
-| click {identifier} | Performs the click action on a click-able html element such as a button or link or input | `Click("Save");`
+| `Click("{identifier}"); | Performs the click action on a click-able html element such as a button or link or input | `Click("Save");`
 | ... | ... | ...|
 
 ### Assert commands
