@@ -13,7 +13,7 @@ The Pangolin language consists of basic commands that can simulate different use
 To create your first Pangolin test, follow these steps:
 1. In a Visual Studio solution, add a new project called *Tests* with the template of *Unit Test Project*
 2. Add a NuGet reference to ...
-.... (TODO: Complete)
+3. .... (TODO: Complete)
 
 ## Fresh state: Server side compatibility
 Running a test will often change the state (database, files, cookies, etc).
