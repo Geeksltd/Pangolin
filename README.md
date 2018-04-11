@@ -40,7 +40,10 @@ This is already supported in the M# and Olive frameworks. If you use any other f
 
 
 ## Pangolin Commands
-TODO: Copy from https://sanityhub.com/syntax and make brief.
+TODO: Copy from https://sanityhub.com/syntax. Make the description here very short.
+Then create an MD file for each command and explain it fully with examples, and different tips and tricks, etc.
+(Basir, Use the related sections from "QA docs.pdf". I will then get someone to proof read them and edit them. You can then check their changes to learn from and improve your English writing skills.)
+
 
 ### Action commands
 | Command |  Example | Description
