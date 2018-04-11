@@ -40,12 +40,13 @@ This is already supported in the M# and Olive frameworks. If you use any other f
 
 
 ## Pangolin Commands
+TODO: Copy from https://sanityhub.com/syntax and make brief.
 
 ### Action commands
-| Command | Description | Example  |
-| ------------- |:-------------:| -----:|
-| `Click("{identifier}");` | Performs the click action on a click-able html element such as a button or link or input | `Click("Save");`
-| ... | ... | ...|
+| Command example | Description  |
+| ------------- |:-------------:|
+| `Click("Save");` | Performs the click action on a click-able html element such as a button or link or input | 
+| ... | ... | 
 
 ### Assert commands
 ...
