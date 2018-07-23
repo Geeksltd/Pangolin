@@ -4,7 +4,7 @@
 You should install a hosted copy of the `Pangolin Test Orchestration` app on a server.
 This should occur *only once for the whole company*.
 The source code of the app is available at https://gitlab.com/basirjalali/Pangolin/tree/master/Pangolin/Pangolin.Orchestration.API 
- 
+
 Let’s say it’s hosted as https://pangolin.geeksltd.co.uk 
 
 ## Batch Run via Pangolin Test Explorer
@@ -13,10 +13,10 @@ To run a whole batch of unit tests on the cloud independently use the following 
 ```
 Pangolin.Publisher.exe “C:\Projects\MyProject\Tests\bin\Debug\Tests.dll" https://pangolin.geeksltd.co.uk
 ```
- 
+
 - The first argument is the full path to your Pangolin test project dll. 
 - The second argument must be the Pangolin Server url.
- 
+
 ### Pangolin Test Explorer: Visual Studio Extension
 The `Pangolin Test Explorer` extension has been provided to run batch of unit tests more convenience.
 First of all, install the `Pangolin Test Explorer` extension via Visual Studio Extension tool.
@@ -37,7 +37,7 @@ There is a Grid View to display the result of unit tests.
 The Pangolin Server application is responsible for batch running a whole bunch of pangolin tests. It doesn’t run the tests itself, but rather creates a set of cloud virtual machines to execute the tests.
 
 If required, to set it up on a new server on AWS, follow these instructions step by step:
- 
+
 1. Create a VM in Amazon, this one must be Windows Server with SQL Server.
 1. In AWS create an Elastic IP to that VM.
 1. Map a domain (e.g. pangolin.geeksltd.co.uk) to that IP.
@@ -56,6 +56,6 @@ If required, to set it up on a new server on AWS, follow these instructions step
    1. `ConnectionString`: *{database connection string}*
    1. `PangolinCloudManagerPath`: *C:\Projects\Pangolin.CloudManager*
    1. `PangolinRunnerServers`: *{number of server to create}*
- 
+
 
 
