@@ -15,17 +15,17 @@ For a new project which does not have existing sanity tests, follow the followin
    using Pangolin;
    using Microsoft.VisualStudio.TestTools.UnitTesting;
    
-   namespace Test
+   namespace UnitTestProject9
    {
-   	[TestClass]
-   	public class TestCaseName : UITest
-   	{
-       	[TestMethod]
-          	public override void RunTest()
+       [TestClass]
+       public class TestCaseName : UITest
+       {
+           [TestMethod]
+           public override void RunTest()
            {
-           	//YOUR CODE
+               //YOUR CODE
            }
-   	}
+       }
    }
    ```
 
