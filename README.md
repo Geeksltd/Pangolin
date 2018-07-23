@@ -7,11 +7,35 @@ In other words, when creating a Pangolin test, you will be thinking in terms of 
 
 The Pangolin language consists of basic commands that can simulate different user actions in a browser such as clicking buttons and menus, filling out input fields, ticking checkboxes and radio buttons.
 
-## Getting started with Pangolin
-To create your first Pangolin test, follow these steps:
-1. In a Visual Studio solution, add a new project called *Tests* with the template of *Unit Test Project*
-2. Add a NuGet reference to ...
-3. .... (TODO: Complete)
+## Creating a Pangolin test project
+For a new project which does not have existing sanity tests, follow the following instructions:
+
+1. In the project’s solution in Visual Studio, create new *Unit Test* project called *Tests*
+1. Create folder Uploadable.Files at the root of project and copy all files that are required in the uploader control, then set “Build Action” to “Embedded Resource” from “Properties”  for each of them.
+1. Add latest version of Pangolin nuget
+1. .... (TODO: Complete)
+
+### Create your first TestClass using the following pattern:
+
+```c#
+using Pangolin;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+namespace Test
+{
+	[TestClass]
+	public class TestCaseName : UITest
+	{
+        	[TestMethod]
+       	public override void RunTest()
+        	{
+
+              	//YOUR CODE
+        	}
+	}
+}
+```
+
 
 > NOTE: To migrate a **Sanity** based test project to Pangolin, follow [these instructions](https://docs.google.com/document/d/1vxcRrK8kHy-ZD4cApEU7pyOAnRGZEeJ_izmhXSHbMkc/edit?usp=sharing)
 
