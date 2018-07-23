@@ -20,8 +20,7 @@ namespace Test
         	[TestMethod]
        	public override void RunTest()
         	{
-
-              	//YOUR CODE
+            	//YOUR CODE
         	}
 	}
 }

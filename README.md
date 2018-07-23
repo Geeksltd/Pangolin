@@ -12,6 +12,7 @@ The Pangolin language consists of basic commands that can simulate different use
 | ------------- |:-------------:|
 | [Creating a Pangolin test project](create-project.md) | Learn how to get started by creating your first Pangolin project. |
 | [Migrate from Sanity to Pangolin](sanity-migration.md) | Do you have an existing Sanity-based project? Learn how to migrate it. |
+| [Running and debugging a test in Visual Studio](running-in-vs.md) | Learn how to run and debug a test case in Visual Studio and how to use Chrome Headless. |
 | [Fresh state: Server side compatibility](fresh-slate.md) | Learn how Pangolin creates a fresh server side containers at the beginning of each test. |
 | [Commands](commands.md) | Pangolin consists of basic commands that can simulate different user actions in a browser such as clicking buttons and menus, filling out input fields, ticking checkboxes and radio buttons. |
 | [Cloud-based parallel execution](cloud-run.md) | Learn how to install server app and run a batch of test cases by Pangolin Test Explorer. |
