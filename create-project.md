@@ -20,11 +20,11 @@ For a new project which does not have existing sanity tests, follow the followin
    	[TestClass]
    	public class TestCaseName : UITest
    	{
-           	[TestMethod]
-          		public override void RunTest()
-           	{
-               	//YOUR CODE
-           	}
+       	[TestMethod]
+          	public override void RunTest()
+           {
+           	//YOUR CODE
+           }
    	}
    }
    ```
