@@ -30,3 +30,32 @@ There is a Grid View to display the result of unit tests.
 - While a whole batch of unit tests is running, the latest results will be displayed by clicking the `Refresh` button.
 - To see the detail of a batch, click the `Started` column. Another window will be loaded to displays the details.
 - The `Stop` column is provided to cancel running batch.
+
+## Pangolin Server
+> Note:This needs to be set up once only per organisation, and it already is, at http://pangolin.geeksltd.co.uk.
+
+The Pangolin Server application is responsible for batch running a whole bunch of pangolin tests. It doesn’t run the tests itself, but rather creates a set of cloud virtual machines to execute the tests.
+
+If required, to set it up on a new server on AWS, follow these instructions step by step:
+ 
+1. Create a VM in Amazon, this one must be Windows Server with SQL Server.
+1. In AWS create an Elastic IP to that VM.
+1. Map a domain (e.g. pangolin.geeksltd.co.uk) to that IP.
+1. Log in to the VM server.
+1. From the Pangolin source, copy Pangolin.CloudManager to the server under C:\Projects.
+1. Open the Pangolin.CloudManager console application and set these App.config keys:
+1. AmazonAccessKeyId : ….
+1. AmazonSecretAccessKey: ...
+1. AmazonPangolinImageId: {Use the ID you will create in the next step}
+1. Enable IIS by adding the IIS feature.
+1. From the Pangolin source, copy Pangolin.Orchestration.API to the server under C:\Projects
+1. Grant IIS_USRS full control permission on that folder.
+1. Open IIS and add a website for that folder, bind to the domain (e.g. pangolin.geeksltd.co.uk)
+1. Set up SSL (see https://training.geeksltd.co.uk/a/CL/ALN).
+1. Modify these keys from Web.config to update these settings:
+   1. ConnectionString: {database connection string}
+   1. PangolinCloudManagerPath: C:\Projects\Pangolin.CloudManager
+   1. PangolinRunnerServers: number of server to create
+ 
+
+
