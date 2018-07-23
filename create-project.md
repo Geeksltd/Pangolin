@@ -9,9 +9,7 @@ For a new project which does not have existing sanity tests, follow the followin
 
 1. Create your first unit test by right clicking on a folder or project, from "Add" submenu click "Unit Test" or "Pangolin Unit Test". If select "Pangolin Unit Test" the following pattern will be created and ready to write your code, otherwise if select "Unit Test" manually add below pattern.
 
-   
-
-   ### Create your first TestClass using the following pattern:
+   ### 
 
    ```c#
    using Pangolin;
@@ -30,6 +28,8 @@ For a new project which does not have existing sanity tests, follow the followin
    	}
    }
    ```
+
+   
 
    
 
@@ -62,4 +62,4 @@ For a new project which does not have existing sanity tests, follow the followin
 
 
 
-For existing Sanity projects, all of above key-value pairs set to default values when converting by Sanity to Pangolin application. 
+For existing Sanity projects, app.config added to project automatically and key-value pairs set to default value when converting by Sanity to Pangolin application. 
