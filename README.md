@@ -13,8 +13,7 @@ To create your first Pangolin test, follow these steps:
 2. Add a NuGet reference to ...
 3. .... (TODO: Complete)
 
-## NOTE: Migration from Sanity
-To migrate a Sanity-based test project to Pangolin, follow [these instructions](https://docs.google.com/document/d/1vxcRrK8kHy-ZD4cApEU7pyOAnRGZEeJ_izmhXSHbMkc/edit?usp=sharing)
+> NOTE: To migrate a **Sanity** based test project to Pangolin, follow [these instructions](https://docs.google.com/document/d/1vxcRrK8kHy-ZD4cApEU7pyOAnRGZEeJ_izmhXSHbMkc/edit?usp=sharing)
 
 ## Fresh state: Server side compatibility
 Running a test will often change the state (database, files, cookies, etc).
