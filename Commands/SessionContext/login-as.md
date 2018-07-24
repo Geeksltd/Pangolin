@@ -1,10 +1,10 @@
-#LoginAs<T>
+#`LoginAs<T>`
 
 
 
 Before reading this you should understand what a snippet is and where a snippet lives. Please read the related links to find this out.
 
-The command "LoginAs<T>()" is actually a shortcut to a bunch of Pangolin code defined in the Users feature. "T" is a generic class which should be another test case that inherited UITest class.
+The command "`LoginAs<T>()`" is actually a shortcut to a bunch of Pangolin code defined in the Users feature. "T" is a generic class which should be another test case that inherited UITest class.
 
 Login snippets are treated like test cases, except that they are not treated as duplicates when used in a precondition.
 

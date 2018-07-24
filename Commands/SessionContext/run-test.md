@@ -1,8 +1,8 @@
-#Run<T>()  (Preconditions)
+#`Run<T>()`  (Preconditions)
 
 
 
-The command "Run<T>()" includes in your test case another test case from the same project. This is helpful for setting up your application before you execute your test. For example, if you wanted to login with a
+The command "`Run<T>()`" includes in your test case another test case from the same project. This is helpful for setting up your application before you execute your test. For example, if you wanted to login with a
 particular User, you might need to create that User first. If you wanted to use a particular Company in your test, you need to run a test to add that Company. "T" is a generic class which should be another test case that inherited UITest class, runs that test first. We call these preconditions.
 
 There can be many levels to preconditions. A precondition can have its own preconditions and so on. Pangolin will ignore any duplicate tests in preconditions so this prevents any duplicate data. For example, if I want to add 2
