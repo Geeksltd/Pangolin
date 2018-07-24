@@ -11,11 +11,12 @@ Let’s say it’s hosted as https://pangolin.geeksltd.co.uk
 To run a whole batch of unit tests on the cloud independently use the following command line utility:
 
 ```
-Pangolin.Publisher.exe “C:\Projects\MyProject\Tests\bin\Debug\Tests.dll" https://pangolin.geeksltd.co.uk
+Pangolin.Publisher.exe "C:\Projects\MyProject\Tests\bin\Debug\Tests.dll" "dd2fb66b-634d-4843-a1cb-6c83b47e2ee2" "https://pangolin.geeksltd.co.uk"
 ```
 
 - The first argument is the full path to your Pangolin test project dll. 
-- The second argument must be the Pangolin Server url.
+- The second argument is the app id, it should be a GUID.
+- The third argument must be the Pangolin Server url.
 
 ### Pangolin Test Explorer: Visual Studio Extension
 The `Pangolin Test Explorer` extension has been provided to run batch of unit tests more convenience.
@@ -55,7 +56,7 @@ If required, to set it up on a new server on AWS, follow these instructions step
 1. Modify these keys from Web.config to update these settings:
    1. `ConnectionString`: *{database connection string}*
    1. `PangolinCloudManagerPath`: *C:\Projects\Pangolin.CloudManager*
-   1. `PangolinRunnerServers`: *{number of server to create}*
+   1. `PangolinRunnerServers`: *{number of server to be created}*
 
 
 

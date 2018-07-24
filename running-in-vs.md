@@ -6,4 +6,4 @@ As you run, write, and rerun your tests, Test Explorer displays the results in d
 
 To run or debug the unit test from the Test Explorer right click on the unit test, there are two choices “Run Selected Tests” to run the unit test and “Debug Selected Tests” to debug the unit test. Also there is an option to run all the unit tests, “Run All”. 
 
-Default WebDriver is a normal Chrome. When the Headless is enabled, Unit test will be run without showing the Chrome browser, to enable this feature and hide chrome while the unit test is running, open App.config and set 	Headless key to true.
+Default WebDriver is a normal Chrome. When the Headless is enabled, Unit test will be run without showing the Chrome browser, to enable this feature and hide chrome while the unit test is running, open App.config and set Headless key to true.
