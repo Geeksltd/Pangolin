@@ -89,8 +89,3 @@ But in Pangolin
 | [NearField](Locator/near-field.md)     | NearField("text")   | This command finds any element below a HTML field with text matched within quotation marks. |
 | [NearHeader](Locator/near-header.md)   | NearHeader("text")  | This command finds a HTML header with text matched within quotation marks. |
 
-
-
-## Inter-dependencies and test reuse
-
-...	
