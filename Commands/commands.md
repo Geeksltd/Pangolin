@@ -36,6 +36,7 @@ Assert commands include:
 | [Type](Act/type.md)                                 | Type("text");                  | Set a text to current focused element.                       |
 | [WaitForPopup](Act/waitforpopup.md)                 | WaitForPopup();                | The execution of the next command is delayed until the pop up has loaded. |
 | [WaitForNewPage](Act/waitfornewpage.md)             | WaitForNewPage();              | The execution of the next command is delayed until the new page has loaded. |
+| [WaitToSee](Act/waittosee.md)                       | WaitToSee("text");             | The execution of the next command is delayed until the element with the text matched in quotation has loaded. |
 
 
 
