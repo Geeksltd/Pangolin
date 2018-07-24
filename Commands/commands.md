@@ -34,6 +34,8 @@ Assert commands include:
 | [RefreshPage](Act/refreshpage.md)                   | RefreshPage();                 | The RefreshPage command refreshes the current page.          |
 | [Press](Act/press.md)                               | Press(Keys.Escape);            | Simulates pressing the key on the keyboard to click on an elememt. |
 | [Type](Act/type.md)                                 | Type("text");                  | Set a text to current focused element.                       |
+| [WaitForPopup](Act/waitforpopup.md)                 | WaitForPopup();                | The execution of the next command is delayed until the pop up has loaded. |
+| [WaitForNewPage](Act/waitfornewpage.md)             | WaitForNewPage();              | The execution of the next command is delayed until the new page has loaded. |
 
 
 
