@@ -57,13 +57,13 @@ Assert commands include:
 
 ### Session context commands
 
-| Topic                                        | Example                   | Description                                                  |
-| -------------------------------------------- | ------------------------- | ------------------------------------------------------------ |
-| [Run<T>](Session Context/run-test.md)        | Run<Test>();              | This command enables testers to run one test within the same project on Dashboard within another. |
-| [LoginAs<T>](Session Context/run-test.md)    | LoginAs<User>();          | Is actually a shortcut to a bunch of Pangolin code defined in the Users feature. |
-| [AssumeDate](Session Context/assume-date.md) | AssumeDate("01/01/2018"); | This command forces the application to assume a specified date. |
-| [AssumeTime](Session Context/assume-time.md) | AssumeTime("12:00");      | This command forces applications to assume a specified time. |
-| [Logout](Session Context/logout.md)          | Logout();                 | The Logout command clears certain cookies from the browser’s memory. |
+| Topic                                       | Example                   | Description                                                  |
+| ------------------------------------------- | ------------------------- | ------------------------------------------------------------ |
+| [Run<T>](SessionContext/run-test.md)        | Run<Test>();              | This command enables testers to run one test within the same project on Dashboard within another. |
+| [LoginAs<T>](SessionContext/run-test.md)    | LoginAs<User>();          | Is actually a shortcut to a bunch of Pangolin code defined in the Users feature. |
+| [AssumeDate](SessionContext/assume-date.md) | AssumeDate("01/01/2018"); | This command forces the application to assume a specified date. |
+| [AssumeTime](SessionContext/assume-time.md) | AssumeTime("12:00");      | This command forces applications to assume a specified time. |
+| [Logout](SessionContext/logout.md)          | Logout();                 | The Logout command clears certain cookies from the browser’s memory. |
 
 
 
