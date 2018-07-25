@@ -1,4 +1,4 @@
-#CheckMailBox("email address")
+# CheckMailBox("email address")
 
 
 

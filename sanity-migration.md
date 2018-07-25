@@ -1,4 +1,4 @@
-#Migrating from Sanity to Pangolin
+# Migrating from Sanity to Pangolin
 
 ## Where are my .Sanity files?
 To export a project’s tests from SanityHub.com into *.Sanity files, in Sanity Studio click “Export to folder” from “Import” menu. 

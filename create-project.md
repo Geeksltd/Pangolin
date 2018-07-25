@@ -3,13 +3,11 @@ For a new project which does not have existing sanity tests, follow the followin
 
 1. In the project’s solution in Visual Studio, create new *Unit Test* project called *Tests*
 
-1. Create folder Uploadable.Files at the root of project and copy all files that are required in the uploader control, then set “Build Action” to “Embedded Resource” from “Properties”  for each of them.
+2. Create folder Uploadable.Files at the root of project and copy all files that are required in the uploader control, then set “Build Action” to “Embedded Resource” from “Properties”  for each of them.
 
-1. Add latest version of Pangolin nuget
+3. Add latest version of Pangolin nuget
 
-1. Create your first unit test by right clicking on a folder or project, from "Add" submenu click "Unit Test" or "Pangolin Unit Test". If select "Pangolin Unit Test" the following pattern will be created and ready to write your code, otherwise if select "Unit Test" manually add below pattern.
-
-   ### 
+4. Create your first unit test by right clicking on a folder or project, from "Add" submenu click "Unit Test" or "Pangolin Unit Test". If select "Pangolin Unit Test" the following pattern will be created and ready to write your code, otherwise if select "Unit Test" manually add below pattern.
 
    ```c#
    using Pangolin;
