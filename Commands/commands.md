@@ -26,7 +26,7 @@ Assert commands include:
 
 | Command                                             | Example                        | Description                                                  |
 | --------------------------------------------------- | ------------------------------ | ------------------------------------------------------------ |
-| [Set](Act/set.md)                                   | Set("Password").To("test");    | The set command defines inputs to be entered into a HTML element on a page. |
+| [Set](Act/set.md)                                   | `Set("Password").To("test");`    | The set command defines inputs to be entered into a HTML element on a page. |
 | [Click](Act/click.md)                               | Click("Save");                 | Performs the click action on a click-able html element such as a button or link or input |
 | [CheckMailBox](Act/checkmailbox.md)                 | CheckMailBox("email address"); | The CheckMailbox command accesses the email queue items in an application. |
 | [Goto](Act/goto.md)                                 | Goto("/");                     | The Goto command redirects the current page to another URL within the same domain. |
