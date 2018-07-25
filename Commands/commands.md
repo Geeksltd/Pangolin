@@ -28,7 +28,7 @@ Assert commands include:
 | --------------------------------------------------- | ------------------------------ | ------------------------------------------------------------ |
 | [Set](Act/set.md)                                   | `Set("Password").To("test");`    | The set command defines inputs to be entered into a HTML element on a page. |
 | [Click](Act/click.md)                               | `Click("Save");`               | Performs the click action on a click-able html element such as a button or link or input |
-| [CheckMailBox](Act/checkmailbox.md)                 | `CheckMailBox("email address");` | The CheckMailbox command accesses the email queue items in an application. |
+| [CheckMailBox](Act/checkmailbox.md)                 | `CheckMailBox("email_address");` | The CheckMailbox command accesses the email queue items in an application. |
 | [Goto](Act/goto.md)                                 | `Goto("/");`                   | The Goto command redirects the current page to another URL within the same domain. |
 | [CheckBackgroundTasks](Act/checkbackgroundtasks.md) | `CheckBackgroundTasks();`      | Redirect the current page to the page with the list of all Automated Tasks implemented in the application |
 | [RefreshPage](Act/refreshpage.md)                   | `RefreshPage();`               | The RefreshPage command refreshes the current page.          |
