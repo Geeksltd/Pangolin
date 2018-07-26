@@ -2,25 +2,27 @@
 
 There are three groups of commands in Pangolin: those that act on an element, those that arrange your position on a page and those that assert or expect an outcome.
 
+There are method overload for most of commands, take a look at [Pangolin commands precondition](precondition-command.md) to see different types of arguments, default values and method types.
+
 Arrange commands include the following:
 
 - Above
 - Near
 - Below
-- At row
+- AtRow
 
 Act commands include:
 
-- click
-- set
+- Click
+- Set
 
 Assert commands include:
 
-- expect
-- expect botton
-- expect field
-- expect header
-- expect row
+- Expect
+- ExpectBotton
+- ExpectField
+- ExpectHeader
+- ExpectRow
 
 ### Action commands
 

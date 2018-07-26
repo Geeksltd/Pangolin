@@ -5,6 +5,7 @@
 Explanation - Redirect the current page to the page with the list of all Automated Tasks implemented in the
 application
 Usage - used to trigger an Automated Task
+
 e.g. If there a task is used to send automatic emails, your code might look something like
 
 ```C#
