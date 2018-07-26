@@ -32,7 +32,7 @@ namespace TestUITests
             AtRow(That.Contains, "Apr").Column(That.Contains, "Edit").ClickLink();
             WaitToSeeHeader(That.Contains, "Month details");
             AtLabel("Month").ClickField();
-            Type(Edited Apr");
+            Type("Edited Apr");
             ClickCheckbox("IsActive");
             ClickRadiobox("Monthly");
             Set("Start date").To("02/04/2014");
