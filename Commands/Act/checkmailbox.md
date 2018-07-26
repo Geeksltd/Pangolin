@@ -27,7 +27,7 @@ namespace TestUITests
             WaitForNewPage();
             Set("First Name").To("John");
             Set("Last name").To("Bupa");
-            Set("Email address").To("JBupa@uat.co");
+            Set("Email address").To("JBupa@yahoo.com");
             AtLabel(That.Contains, "Roles").Click("Admin");
             Set("Telephone number").To("01234567890");
             Click("Save");
@@ -36,7 +36,7 @@ namespace TestUITests
             AtRow(That.Contains, "John Bupa").Expect(What.Contains, "01234567890");
             AtRow(That.Contains, "John Bupa").Expect(What.Contains, "Admin");
             
-            CheckMailBox("JBupa@uat.co");
+            CheckMailBox("JBupa@yahoo.com");
             WaitToSee(What.Contains, "Brookson Registration");
             
             Click("Registration");
@@ -48,7 +48,7 @@ namespace TestUITests
             Click("Proceed To The Login Page");
             WaitForNewPage();
             
-            Set("Email address").To("JBupa@uat.co");
+            Set("Email address").To("JBupa@yahoo.com");
             Set("Password").To("Test");
             Above(What.Contains, "Forgot password?").Click("Login");
             WaitForNewPage();
