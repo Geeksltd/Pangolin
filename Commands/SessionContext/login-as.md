@@ -29,10 +29,10 @@ namespace TestUITests
             Logout();
             AssumeDate("01/07/2017");
             Goto("/");
-            Set("Email address").To("adamadmin@uat.co");
-            Set("Password").To("Test_123");
+            Set("Email address").To("admin@gmail.com");
+            Set("Password").To("test");
             Click("Login");
-            Expect("Adam Admin");
+            Expect("admin");
         }
     }
 }

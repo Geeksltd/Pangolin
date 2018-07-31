@@ -2,7 +2,7 @@
 
 There are three groups of commands in Pangolin: those that act on an element, those that arrange your position on a page and those that assert or expect an outcome.
 
-There are method overload for most of commands, take a look at [Pangolin commands precondition](precondition-command.md) to see different types of arguments, default values and method types.
+There are method overload for most of commands, take a look at [Pangolin precondition commands](precondition-command.md) to see different types of arguments, default values and method types.
 
 Arrange commands include the following:
 

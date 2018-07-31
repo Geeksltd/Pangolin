@@ -14,4 +14,57 @@ Add New Doctor: Danielle Doctor
 
 Each test contains the same precondition that adds their Hospital (Add New Hospital: Homerton Hospital).
 Running each test by themselves would give no error but running both as 2 preconditions would add the
-Hospital twice, potentially causing an error. However, Pangolin sees that it is a duplicate and makes sure to run it only once, therefore my new test will have 2 doctors in the system to use
+Hospital twice, potentially causing an error. However, Pangolin sees that it is a duplicate and makes sure to run it only once, therefore my new test will have 2 doctors in the system to use.
+
+e.g.
+
+```C#
+using Pangolin;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+namespace TestUITests
+{
+    [TestClass]
+    public class Addclient_user : UITest
+    {
+        [TestMethod]
+        public override void RunTest()
+        {
+            LoginAs<Adminuser>();
+            WaitForNewPage();
+            Click("Clients");
+            WaitForNewPage();
+            Click("New Client");
+            WaitForNewPage();
+            Set("Name").To("Client User");
+            Choose("Public");
+            UnCheck("Inactive");
+            Click("Save");
+            WaitForNewPage();
+        }
+    }
+}
+
+```
+
+
+
+```C#
+using Pangolin;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+namespace TestUITests
+{
+    [TestClass]
+    public class Test : UITest
+    {
+        [TestMethod]
+        public override void RunTest()
+        {
+            Run<Addclient_user>();
+            LoginAs<Clientuser>();
+        }
+    }
+}
+```
+

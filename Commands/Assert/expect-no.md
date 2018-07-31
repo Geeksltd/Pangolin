@@ -3,7 +3,9 @@
 
 
 Searches the current page to ensure the text contained in quotation marks is not found. The "ExpectNo"
-prefixed commands are commonly used to test scenarios where we expect failure. Like the 'Expect' command, it can be combined with other commands (row, link, field, etc.) It is generally bad practice to end a test case on an 'ExpectNo' command. For example, if you wanted to check that a Cancel button works, it would make sense to begin your test by starting to add something, clicking Cancel and then validating the Add didn't complete. e.g.
+prefixed commands are commonly used to test scenarios where we expect failure. Like the 'Expect' command, it can be combined with other commands (row, link, field, etc.) It is generally bad practice to end a test case on an 'ExpectNo' command. For example, if you wanted to check that a Cancel button works, it would make sense to begin your test by starting to add something, clicking Cancel and then validating the Add didn't complete. 
+
+e.g.
 
 ```C#
 using Pangolin;
@@ -18,13 +20,12 @@ namespace TestUITests
         public override void RunTest()
         {
             Click("Add New Customer");
-            Set("Name").To("John Smith");
+            Set("Name").To("New Customer");
             Click("Cancel");
-            ExpectNoRow("John Smith");
+            ExpectNoRow("New Customer");
         }
     }
 }
-
 ```
 
 
