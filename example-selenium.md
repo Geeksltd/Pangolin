@@ -45,11 +45,11 @@ namespace TestUITests
 
 
 
-It's clear in TestInitialize method, ChromeDriver is created and is launched in Maximize mode. In this example we tend to google Geeks company. So first redirect browser to "http://www.google.com", type "Geeks" and press Search button. 
+From TestInitialize method, ChromeDriver is created and launched in Maximize mode. In this example we tend to google Geeks company. So first redirect browser to "http://www.google.com", type "Geeks" and press Search button. 
 
 We are able to write Unit Test logic in SeleniumTestMethod method, So first redirect to Google website, find search text box by XPath command and set it to Geeks. Selenium runs the commands on the browser page and return IWebElement. Finally click on search button by pressing Enter key.
 
-It's best practice to dispose Chrome driver in order to prevent creating a instance of chromedriver.exe per each test case, so in TestCleanup we dipose chrome driver.
+It's a best practice to dispose Chrome driver in order to prevent creating a instance of chromedriver.exe per each test case, so in TestCleanup we dipose chrome driver.
 
 Selenium has rich commands for selecting elements on the page, here is a good website for learning Selenium commands
 
