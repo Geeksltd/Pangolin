@@ -17,3 +17,5 @@ The Pangolin language consists of basic commands that can simulate different use
 | [Commands](Commands/commands.md) | See three groups of Pangolin commands, Act, Arrange and Assert commands and how to use them in Pangolin scripts. |
 | [Cloud-based parallel execution](cloud-run.md) | Learn how to install server app and run a batch of test cases by Pangolin Test Explorer. |
 | [Example: End-to-end test](example.md) | See an example of Pangolin and explanations about server-side functionality. |
+| [Example: Selenium](example-selenium.md) | Want to create your own Selenium test case without Pangolin? Learn how to create a simple one. |
+

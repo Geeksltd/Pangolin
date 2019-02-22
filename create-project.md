@@ -34,17 +34,43 @@ For a new project which does not have existing sanity tests, follow the followin
 5. Add app.config file to your project and add the following key-value pairs.
 
    ```xaml
-   <?xml version="1.0" encoding="utf-8" ?>
+   <?xml version="1.0" encoding="utf-8"?>
    <configuration>
+     <configSections>
+       <sectionGroup name="localSettings" type="System.Configuration.AppSettingsSection">
+         <section name="localConfigs" type="System.Configuration.AppSettingsSection" />
+       </sectionGroup>
+       <sectionGroup name="batchRunnerSettings" type="System.Configuration.AppSettingsSection">
+         <section name="batchConfigs" type="System.Configuration.AppSettingsSection" />
+         <section name="serviceConfigs" type="System.Configuration.AppSettingsSection" />
+         <section name="dnsConfigs" type="System.Configuration.AppSettingsSection" />
+       </sectionGroup>
+     </configSections>
      <appSettings>
-       <add key = "AppBaseUrl" value = "HOSTED_WEBAPP" />
-       <add key = "AppPublishPath" value = "WEBAPP_PATH" />
-       <add key = "PangolinAppId" value = "GUID" />
-       <add key = "PangolinServer" value = "SERVER_URL" />
-       <add key = "Download.Url" value = "CHROME_DOWNLOAD_PATH" />
-       <add key = "Headless" value = "TRUE_FALSE" />
-       <add key = "PangolinPublisherPath" value = "PUBLISHER_PATH" />
      </appSettings>
+     <localSettings>
+       <localConfigs>
+         <add key="AppBaseUrl" value="http://localhost" />
+         <add key="PangolinAppId" value="A9D67AB8-C9AF-4C85-A343-599B29DDB63C" />
+         <add key="Download.Url" value="c:\download" />
+         <add key="Headless" value="false" />
+         <add key="EnableSnapshot" value="false" />
+         <add key="AppPublishPath" value="APP_DIRECTORY_PATH" />
+         <add key="ConnectionStringKey" value="" />
+         <add key="DataProviderType" value="" />
+       </localConfigs>
+     </localSettings>
+     <batchRunnerSettings>
+       <batchConfigs>
+         <add key="PangolinServer" value="http://pangolin.geeksltd.co.uk" />
+         <add key="PangolinPublisherPath" value="C:\Projects\Pangolin.Publisher" />
+         <add key="WebConfigPath" value="" />
+       </batchConfigs>
+       <serviceConfigs>
+       </serviceConfigs>
+       <dnsConfigs>
+       </dnsConfigs>
+     </batchRunnerSettings>
    </configuration>
    ```
 
