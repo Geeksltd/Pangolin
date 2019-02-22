@@ -1,4 +1,4 @@
-## Example: End-to-end test
+## Example: Selenium
 
 Create new Unit Test project, add Nuget Packages Selenium.WebDriver and Selenium.WebDriver.ChromeDriver. If you want to run Selenium along with other browsers, instead of Chrome driver, install the right Nuget package.
 The best practice of writing Selenium Unit Tests is that to initialize Selenium driver in TestInitialize method and dispose it from TestCleanup.
