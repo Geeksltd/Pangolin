@@ -6,7 +6,7 @@ We are looking at a new architecture for UI Testing based on the following princ
 - Use strong typing and compile-time checking where possible, by generating page models using M#
 - Benefit from Visual Studio intellisense for more productive test development
 
-## Development model
+## New Development model
 Tests written in this model will use a slighly different syntax.
 Each section of the code will first select an `M# module` as its context in a `using` block to gain access to pre-generated UI object pointers which are properties that have a built-in 
 
@@ -61,3 +61,16 @@ public class EditCustomer : PangolinTest
     }
 }
 ```
+
+
+# SpecFlow vs Pangolin/Sanity
+[Learn about Specflow here.](https://specflow.org/getting-started/)
+It's a framework and tool for implementing BDD (Behaviour Driven Development) using `Cucumber` in .NET.
+
+Specflow (and Cucumber in general) says that the `high level definition` of a test is different from the `code` that implements and runs that test. But the `high level specifications` of the behaviour of the application should be properly mapped to the code that run them.
+
+The Pangolin (and Sanity) philosophy has been that the `test execution code` should be so simple and readable, that it can be used as the `test specification`. It argued that `any form of documentation` is worse than a `self documenting code` that is as concise and clean as English. And eliminating such a step would lead to productivity and avoids inconcistency (between code and documentation). The Sanity philosophy was that the `Sanity code` is simple and clean enough that it can be used as a `communication tool` between the technical and non technical people, including the clients.
+
+With the Sanity conversion to Pangolin, the original simplicity of the language syntax was reduced, with the syntax noise from C# being added. It was arguably no longer pure enough to be usable as a communication tool. If that original vision cannot be fulfilled, then we might as well abandon that dream, and reintroduce separated documentation from code and think of our Pangolin code as a technical artefact only. This is where Specflow comes handy.
+
+Specflow can be integrated with any Selenium based test automation, including Pangolin code (old and new).
