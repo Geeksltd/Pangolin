@@ -33,10 +33,9 @@ public partial class LoginForm : ModulePageModel
 {
     LoginForm(IWebDriver driver) : base (driver) { }
     
-    public HtmlTextboxElement Username => driver.FindElement(By.XPath("[data-module='LoginForm'] [name='Username']");
-    public HtmlTextboxElement Password => driver.FindElement(By.XPath("[data-module='LoginForm'] [name='Password']");
-    
-    public HtmlButtonElement LoginButton => driver.FindElement(By.XPath("[data-module='LoginForm'] input[type=submit][name='Login']");
+    public HtmlTextboxElement Username => ByXPath<HtmlTextboxElement>("[data-module='LoginForm'] [name='Username']");
+    public HtmlTextboxElement Password => ByXPath<HtmlTextboxElement>("[data-module='LoginForm'] [name='Password']");    
+    public HtmlButtonElement LoginButton => ByXPath<HtmlButtonElement>("[data-module='LoginForm'] input[type=submit][name='Login']");
 }
 ...
 ```
@@ -53,9 +52,9 @@ public class EditCustomer : PangolinTest
     {
         using (var list = Module<CustomersList>())
         {
-            list.Search.FirstName.SendKeys("Jack");
+            list.Search.FirstName.Set("Jack");
             list.SearchButton.Click();
-            list.Columns.Name.AtRow("Jack smith").Click();
+            list.AtRow("Jack smith").NameLink.Click();
         }
     }
 }
