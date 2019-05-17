@@ -1,6 +1,6 @@
-# Plain Selenium with M# generated 'page model'
+# Pangolin intellisense - M# generated 'page model'
 
-We are looking at a new architecture for UI Testing based on the following principals:
+We are looking at improving our UI Testing based on the following principals:
 
 - Use strong typing and compile-time checking where possible, by generating page models using M#
 - Benefit from Visual Studio intellisense for more productive test development
@@ -36,7 +36,7 @@ The output path should be the project directory of your normal Pangolin UI test 
 The file looks something like the following (containing every module in your M# project).
 
 ```csharp
-public partial class LoginForm : ModulePageModel
+partial class LoginForm : ModulePageModel
 {
     LoginForm(IWebDriver driver) : base (driver) { }
     
@@ -76,6 +76,6 @@ Specflow (and Cucumber in general) says that the `high level definition` of a te
 
 The Pangolin (and Sanity) philosophy has been that the `test execution code` should be so simple and readable, that it can be used as the `test specification`. It argued that `any form of documentation` is worse than a `self documenting code` that is as concise and clean as English. And eliminating such a step would lead to productivity and avoids inconcistency (between code and documentation). The Sanity philosophy was that the `Sanity code` is simple and clean enough that it can be used as a `communication tool` between the technical and non technical people, including the clients.
 
-With the Sanity conversion to Pangolin, the original simplicity of the language syntax was reduced, with the syntax noise from C# being added. It was arguably no longer pure enough to be usable as a communication tool. If that original vision cannot be fulfilled, then we might as well abandon that dream, and reintroduce separated documentation from code and think of our Pangolin code as a technical artefact only. This is where Specflow comes handy.
+With the Sanity conversion to Pangolin, the original simplicity of the language syntax was reduced, with the syntax noise from C# being added. It was arguably no longer pure enough to be usable as a communication tool with non-techies. If that original vision cannot be fulfilled, then we might as well abandon that dream, and reintroduce separated documentation from code and think of our Pangolin code as a technical artefact only. This is where Specflow comes handy.
 
-Specflow can be integrated with any Selenium based test automation, including Pangolin code (old and new).
+Specflow can be integrated with any Selenium based test automation, including Pangolin.
